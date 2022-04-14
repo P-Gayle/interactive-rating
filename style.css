@@ -5,35 +5,91 @@
 }
 
 body {
+    max-width: 1440px;
     background-color: black;
+    font-family: 'Overpass', sans-serif;
+}
+
+img {
+    background-color: hsl(213, 19%, 18%);
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding:15px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
 }
 
 .card {
-    height:500px;
-    width:500px;
+    height:450px;
+    width:450px;
     background-color: hsl(216, 12%, 8%);
     border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  
+    
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
-    
+    margin-left: 50px;
+
+
+}
+
+.feedback {
+    color: hsl(217, 12%, 63%);
+    margin: 20px 50px;
+    line-height: 1.58rem;
+    font-size: 15px;
+}
+
+.number-container {
+    color: hsl(217, 12%, 63%);
+    max-width: 480px;
+    margin: 30px 50px;;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.number {
+    background-color: hsl(213, 19%, 18%);
+    padding:10px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    margin: 5px 50px;
+    padding: 10px 150px;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  
+    color: hsl(217, 12%, 63%);
+        
+}
 .attribution a { color: hsl(228, 45%, 44%); }
