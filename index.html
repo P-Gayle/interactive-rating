@@ -14,52 +14,60 @@
 
   <main class="card">
 
-    <img src="images/icon-star.svg" alt="star icon">
-     <!-- Rating state start -->
+    <!-- Rating state start -->
+    <img src="images/icon-star.svg" id="img1" alt="star icon">
 
-  <h1>How did we do?</h1>
+    <h1>How did we do?</h1>
 
-  <p class="feedback">Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-  </p>
+    <p class="feedback">Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!
+    </p>
 
-  <form action="#"name="rating" id="rating">
-    <div class="number-container">
-      <input type="button" class="number" name="number" id="b1" value="1">
-      <input type="button" class="number" name="number" id="b2" value="2">
-      <input type="button" class="number" name="number" id="b3" value="3">
-      <input type="button" class="number" name="number" id="b4" value="4">
-      <input type="button" class="number" name="number" id="b5" value="5">
-    </div>
-    <div class="btn">
-      <button type="submit" class ="submit" onclick="thanks()">SUBMIT</button>
-    </div>
-  </form>
+    <form action="#"name="rating" id="rating">
+      <div class="number-container">
+        <input type="button" class="number" name="number" id="b1" value="1">
+        <input type="button" class="number" name="number" id="b2" value="2">
+        <input type="button" class="number" name="number" id="b3" value="3">
+        <input type="button" class="number" name="number" id="b4" value="4">
+        <input type="button" class="number" name="number" id="b5" value="5">
+      </div>
+      <div class="btn">
+        <button type="submit" class ="submit" onclick="thanks()">SUBMIT</button>
+      </div>
+    </form>
 
   <!-- Rating state end -->
+  </main>
 
-</main>
+  <section class="after-submit" id="after-submit">
 
-<section class="after-submit" id="after-submit">
-  <!-- Thank you state start -->
+    <!-- Thank you state start -->
+    <img src="images/illustration-thank-you.svg" id="img2" alt="Thank you image">
 
-  You selected <!-- Add rating here --> out of 5
+    <div class="ratings" >
+      <div id="rating1"></div>
+      <div id="rating2"></div>
+      <div id="rating3"></div>
+      <div id="rating4"></div>
+      <div id="rating5"></div>
+    </div>
 
-  Thank you!
+    <h1>Thank you!</h1>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+    </p>
+    <!-- Thank you state end -->
 
-  <!-- Thank you state end -->
-
-</section>
+  </section>
 
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/P-Gayle">P Gayle</a>.
   </div>
 
   <script src ="scripts.js"></script>
+
 </body>
 </html>

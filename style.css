@@ -10,7 +10,7 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-img {
+#img1 {
     background-color: hsl(213, 19%, 18%);
     margin-left: 50px;
     margin-top: 40px;
@@ -19,7 +19,6 @@ img {
     border-radius: 50%;
     height: 50px;
     width: 50px;
-
 }
 
 .card {
@@ -31,11 +30,10 @@ img {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);  
-    
+    transform: translate(-50%, -50%);    
 }
 
-h1 {
+.card h1 {
     color: hsl(0, 0%, 100%);
     margin-left: 50px;
 }
@@ -53,9 +51,7 @@ h1 {
     margin: 30px 50px;;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 2fr;
-
-   
+    grid-template-rows: 2fr; 
 }
 
 .number {
@@ -79,6 +75,10 @@ h1 {
     color:hsl(0, 0%, 100%);
 }
 
+.number:focus {
+    background-color:hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
 
 form .submit {
     background-color: hsl(25, 97%, 53%);
@@ -93,12 +93,52 @@ form .submit {
     cursor: pointer;
 }
 
-
 .after-submit {
     color: hsl(0, 0%, 100%);
     display: none;
+    height:450px;
+    width:450px;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);            
 }
 
+#img2 {
+    display: flex;
+    margin: 40px auto;   
+}
+
+.ratings {
+    color: hsl(25, 97%, 53%) ;
+    display: flex;
+    justify-content: center;
+    margin: 20px 110px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: 400; 
+    border-radius: 20px;   
+}
+
+.after-submit h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 20px;   
+}
+
+.after-submit p {
+    font-size: 15px;
+    font-weight: 400;  
+    color: hsl(217, 12%, 63%);
+    margin: 10px 50px 10px; 
+    text-align: center;
+    line-height: 1.5rem;
+}
 
 .attribution { 
     font-size: 11px; 
@@ -108,7 +148,7 @@ form .submit {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);  
-    color: hsl(217, 12%, 63%);
-        
+    color: hsl(217, 12%, 63%);      
 }
+
 .attribution a { color: hsl(228, 45%, 44%); }
