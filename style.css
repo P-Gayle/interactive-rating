@@ -77,7 +77,7 @@ body {
 }
 
 .number:focus {
-    background-color:hsl(25, 97%, 53%);
+    background-color: hsl(217, 12%, 63%);;
     color:hsl(0, 0%, 100%);
 }
 
@@ -92,6 +92,8 @@ form .submit {
 
 .submit:hover {
     cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
 }
 
 .after-submit {
@@ -153,3 +155,60 @@ form .submit {
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:375px) {
+    .card{
+        max-width: 325px;
+    } 
+    
+   form .submit {
+        padding: 10px 100px;
+        margin: 5px 35px;
+    }
+  
+    .feedback {
+        margin: 20px 25px;
+        line-height: 1.4rem;       
+    }
+
+    #img1 {
+        margin-left: 25px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        padding:12px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .card h1 {
+      margin-left: 25px;
+    }
+
+    .number {
+        padding:10px 10px;
+        height: 40px;
+        width: 40px;
+       
+    }
+
+    .number-container {
+        max-width: 480px;
+        margin: 30px 25px;;
+    }
+
+    .after-submit {
+        
+        width:325px;
+        border-radius: 16px;                  
+    }
+
+    .ratingResult {
+        margin: 20px 60px;   
+    }
+
+    .appreciation {
+        margin: 10px 20px 10px; 
+        line-height: 1.4rem;
+    }
+}
+
