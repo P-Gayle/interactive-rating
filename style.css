@@ -54,7 +54,7 @@ body {
     grid-template-rows: 2fr; 
 }
 
-.number {
+.number-container span {
     background-color: hsl(213, 19%, 18%);
     padding:10px 10px;
     border-radius: 50%;
@@ -69,14 +69,23 @@ body {
     transition: all 0.2s ease;
 }
 
-.number:hover {
+.number-container input[type="radio"]:checked + span {
+    background-color:hsl(216, 12%, 54%);
+    color:hsl(0, 0%, 100%);
+  }
+
+  .number-container input[type="radio"] {
+    display: none;
+  }
+
+.number-container span:hover {
     cursor: pointer;
     background-color:hsl(25, 97%, 53%);
     color:hsl(0, 0%, 100%);
 }
 
 .number:focus {
-    background-color:hsl(25, 97%, 53%);
+    background-color:hsl(216, 12%, 54%);
     color:hsl(0, 0%, 100%);
 }
 
@@ -91,6 +100,8 @@ form .submit {
 
 .submit:hover {
     cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
 .after-submit {
@@ -139,6 +150,7 @@ form .submit {
     text-align: center;
     line-height: 1.5rem;
 }
+
 
 .attribution { 
     font-size: 11px; 
